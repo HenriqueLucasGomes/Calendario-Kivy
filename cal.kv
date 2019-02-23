@@ -1,7 +1,7 @@
 <Calendario>
     orientation:"lr-tb"
     Button:
-        text:"Janeiro"
+        text:"Janeiro"#representa o mes
         size_hint:.25,.0526315789473684
     Button:
         text:"Fevereiro"
@@ -15,11 +15,11 @@
     #DIAS
 
     Button:
-        text:""
+        text:""#botões para definir espaço
         size_hint:.0357142857142857,.0526315789473684
     Button:
         text:"1"
-        on_press:root.dia(self,"01")
+        on_press:root.dia(self,"01")# 01 representa o mes pelo seu número
         size_hint:.0357142857142857,.0526315789473684
     Button:
         text:"2"
@@ -1890,7 +1890,7 @@
 
     TextInput:
         size_hint:.5,.25
-        id:data
+        id:data#serve como chama de identificação/localização
         readonly:True
     Label:
         size_hint:.5,.5
@@ -1921,12 +1921,6 @@
         font_size:30
         size_hint: .6,.30
         pos_hint: {"center_y": .4,"center_x":.5}
-        on_press: root.botao1()
-
-#    Button:
-#        text:"Sair"
-#        size_hint: .3,.15
-#        pos_hint: {"center_y": .3,"center_x":.5}
-#        on_press: app.botao2()
+        on_press: root.ver()
 
 Tela:
